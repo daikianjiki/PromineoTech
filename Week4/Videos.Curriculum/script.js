@@ -69,4 +69,20 @@ sentHttpRequest('getUser', user => console.log(user));
 //wow... I need to watch this video again. I don't understand.
 
 //promises
+doSomethingThatReturnsAPromise()
+    .then((value => {
+        console.log(value);
+    }).cathch(err) => {
+        console.error(err);
+    });
 
+    //OR!!!!
+function handleEvent(valie) {
+    console.log(value);
+}
+function handleError(err) {
+    console.error(err);
+}
+doSomethingThatReturnsAPromise()
+    .then(handleEvenet);
+    .catch(handleError);
